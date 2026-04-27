@@ -11,8 +11,9 @@ import io
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
-from . import models, schemas
-from .database import get_db, engine
+import models
+import schemas
+from database import engine, get_db
 
 load_dotenv()
 
